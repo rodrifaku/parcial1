@@ -1,0 +1,34 @@
+<ion-card [id]="mostrar.ID">
+  <img [src]="mostrar.foto">
+  <ion-card-header>
+    <ion-card-title>
+      {{ mostrar.Nombre }}| |{{mostrar.Apellido}}
+    </ion-card-title>
+  </ion-card-header>
+  <ion-list>
+    <ion-item>
+      {{ mostrar.Descripcion }}
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      {{ mostrar.Actividad}}
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      {{ mostrar.Hora_entrada}}| |{{mostrar.Hora_salida}}
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      {{ mostrar.Clasificacion}}
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      {{ mostrar.Estado}}
+    </ion-item>
+  </ion-list>
+
+</ion-card>
