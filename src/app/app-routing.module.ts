@@ -15,10 +15,7 @@ const routes: Routes = [
     path: 'participante',
     loadChildren: () => import('./participante/participante.module').then( m => m.ParticipantePageModule)
   },
-  {
-    path: 'menu',
-    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
-  },
+  
 ];
 
 @NgModule({

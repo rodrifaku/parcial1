@@ -1,34 +1,35 @@
-<ion-card [id]="mostrar.ID">
+<ion-card [id]="mostrar.ID" [ngStyle]="{'background-color': mostrar.Estado === 'Activo' ? 'green' : (mostrar.Estado === 'Inactivo' ? 'red' : 'inherit')}">
   <img [src]="mostrar.foto">
   <ion-card-header>
     <ion-card-title>
-      {{ mostrar.Nombre }}| |{{mostrar.Apellido}}
+      {{ mostrar.Nombre }} {{ mostrar.Apellido }}
     </ion-card-title>
   </ion-card-header>
   <ion-list>
     <ion-item>
+      Información del participante <br> 
       {{ mostrar.Descripcion }}
     </ion-item>
   </ion-list>
   <ion-list>
     <ion-item>
-      {{ mostrar.Actividad}}
+      Actividad a entrar: {{ mostrar.Actividad }}
     </ion-item>
   </ion-list>
   <ion-list>
     <ion-item>
-      {{ mostrar.Hora_entrada}}| |{{mostrar.Hora_salida}}
+      Horario de entrada: {{ mostrar.Hora_entrada }} 
+      Horario de salida: {{ mostrar.Hora_salida }}
     </ion-item>
   </ion-list>
   <ion-list>
     <ion-item>
-      {{ mostrar.Clasificacion}}
+      Clasificación de entrada: {{ mostrar.Clasificacion }}
     </ion-item>
   </ion-list>
   <ion-list>
     <ion-item>
-      {{ mostrar.Estado}}
+      {{ mostrar.Estado }}
     </ion-item>
   </ion-list>
-
 </ion-card>
